@@ -4,7 +4,7 @@
         <title>MLB Scoreboard</title>
         <link href="./styles.css"rel="stylesheet" type="text/css">
         <script src="../js/jquery.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
         <style type="text/css">
             #datalist { 
                 margin-right: auto; 
@@ -14,14 +14,15 @@
             
             table {     
                 border-collapse: collapse;
+                position: relative;
             } 
 
              td {
-                color: red;
+                color: black;
                 height: 30px;
                 width: 40px;
                 padding: 7px;
-                font-family: 'Coming Soon', cursive; 
+                font-family: 'Inconsolata', ; 
             }
 
             table tr:nth-child(even) {
@@ -34,15 +35,23 @@
             }
 
             h1 {
-                font-family: 'Coming Soon', cursive;
-                color: #000080;
+                font-family: 'Inconsolata', ;
+                color: black;
+                position: absolute;
+                top: 480px;
+                left:36px;
                  
-            }    
+            }   
+
+            img {
+                position: absolute;
+                top: 234px;
+            } 
         </style>
     </head>
-    <body style="height:330px; background:url(bball.jpg);">
+    <body>
+        <img class="active" src="baseball2.jpg">
         <h1>MLB Scoreboard</h1>
-        <img class="active" src="../img/bball.jpg">
         <div id="datalist"></div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/javascript">
