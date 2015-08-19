@@ -37,14 +37,14 @@
             h1 {
                 font-family: 'Inconsolata', ;
                 color: black;
-                position: absolute;
+                position: fixed;
                 top: 480px;
                 left:36px;
                  
             }   
 
             img {
-                position: absolute;
+                position: fixed;
                 top: 234px;
             } 
         </style>
@@ -78,7 +78,11 @@
                             var cells = $('table tr td');
                             for (var i = 0; i < cells.length; i += 6) {
                                 cells[i + 5].remove();
-                            }                     
+                            } 
+                            $("td").each(function(index, el) {
+                                var v = $(this).text();
+                                v.length > 18 ? $(this).text(v.slice(0, 10)) : ''
+                            });                    
                         });
 
                     }
