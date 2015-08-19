@@ -1,26 +1,41 @@
 #datalist { 
-    margin-right: auto; margin-left: auto; width:200px;
+    margin-right: auto; 
+    margin-left: auto; 
+    width:200px;
 }
 
 table {     
     border-collapse: collapse;
+    position: relative;
 } 
 
-td {
+ td {
+    color: black;
     height: 30px;
     width: 40px;
     padding: 7px;
-    font-family: 'Coming Soon', cursive; 
+    font-family: 'Inconsolata', ; 
 }
 
 table tr:nth-child(even) {
     border-bottom: 1px solid black;
 } 
 
+
 th {
     background-color: white;
 }
 
 h1 {
-    font-family: 'Coming Soon', cursive;
-}    
+    font-family: 'Inconsolata', ;
+    color: black;
+    position: fixed;
+    top: 480px;
+    left:36px;
+     
+}   
+
+img {
+    position: fixed;
+    top: 234px;
+}  
